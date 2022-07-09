@@ -1,14 +1,16 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Page.module.css'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Aria</title>
-        <meta name="description" content="Notes" />
+        <meta name="description" content="New Note" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
