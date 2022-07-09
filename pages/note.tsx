@@ -24,7 +24,7 @@ const Note: NextPage = () => {
             Milky Way
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy's appearance from Earth: a hazy band of light ...
+              The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy&apos;s appearance from Earth: a hazy band of light ...
             </Typography>
           </CardContent>
         </CardActionArea>
