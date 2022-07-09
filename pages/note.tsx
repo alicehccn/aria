@@ -13,16 +13,12 @@ const Note: NextPage = () => {
     <div className={styles.container}>
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image="https://upload.wikimedia.org/wikipedia/commons/3/35/Guisard_-_Milky_Way.jpg"
-            alt="Milky Way"
-          />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-            Milky Way
+            {date}
             </Typography>
+          </CardContent>
+          <CardContent>
             <Typography variant="body2" color="text.secondary">
               The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy&apos;s appearance from Earth: a hazy band of light ...
             </Typography>
