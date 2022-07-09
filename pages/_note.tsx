@@ -1,6 +1,6 @@
 import { Button, TextField } from '@mui/material'
 import type { NextPage } from 'next'
-import styles from '../styles/Note.module.css'
+import styles from '../styles/Home.module.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';

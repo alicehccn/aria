@@ -1,6 +1,5 @@
-import { Button, TextField } from '@mui/material'
 import type { NextPage } from 'next'
-import styles from '../styles/Note.module.css'
+import styles from '../styles/Home.module.css'
 import Note from './_note';
 
 const Album: NextPage = () => {
