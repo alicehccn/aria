@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 
-const darkTheme = createTheme({
+const theme = createTheme({
   palette: {
     mode: 'dark',
   },
@@ -11,7 +11,7 @@ const darkTheme = createTheme({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme}>
       <Component {...pageProps} />
     </ThemeProvider>
   )
