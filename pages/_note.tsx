@@ -1,25 +1,31 @@
-import { Button, TextField } from '@mui/material'
-import type { NextPage } from 'next'
+import { Button } from '@mui/material'
+import type { NextComponentType, NextPage } from 'next'
 import styles from '../styles/Home.module.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
+import { NoteType } from './interfaces/note.interface';
 
-const Note: NextPage = () => {
-  const date = new Date().toDateString();
+interface PropTypes {
+  content: NoteType
+}
+
+const Note: NextPage<PropTypes> = (props:PropTypes) => {
+  const { content } = props;
+
   return (
     <div className={styles.container}>
       <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-            {date}
+              { content.title }
             </Typography>
           </CardContent>
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              The Milky Way is the galaxy that includes our Solar System, with the name describing the galaxy&apos;s appearance from Earth: a hazy band of light ...
+              { content.body }
             </Typography>
           </CardContent>
         </CardActionArea>
